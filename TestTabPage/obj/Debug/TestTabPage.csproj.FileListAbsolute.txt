@@ -1,0 +1,9 @@
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\bin\Debug\TestTabPage.exe.config
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\bin\Debug\TestTabPage.exe
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\bin\Debug\TestTabPage.pdb
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.csprojResolveAssemblyReference.cache
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.Form1.resources
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.Properties.Resources.resources
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.csproj.GenerateResource.Cache
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.exe
+D:\LapTrinhHot\Projec_CSharp\FacebookMarketing_Project_CuoiKy_FULL\TestTabPage\obj\Debug\TestTabPage.pdb
