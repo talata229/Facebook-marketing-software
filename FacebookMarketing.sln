@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMarketing", "FacebookMarketing\FacebookMarketing.csproj", "{B9BEB586-F212-4CF0-86CC-0D344351E31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook Tools", "Facebook Tools\Facebook Tools.csproj", "{7795A673-70B0-402D-830A-9B949F461C66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9BEB586-F212-4CF0-86CC-0D344351E31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BEB586-F212-4CF0-86CC-0D344351E31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BEB586-F212-4CF0-86CC-0D344351E31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BEB586-F212-4CF0-86CC-0D344351E31C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7795A673-70B0-402D-830A-9B949F461C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7795A673-70B0-402D-830A-9B949F461C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7795A673-70B0-402D-830A-9B949F461C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7795A673-70B0-402D-830A-9B949F461C66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B42BB896-1413-424D-8FCC-2A14B54238D2}
+	EndGlobalSection
+EndGlobal
