@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMarketing", "Facebo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook Tools", "Facebook Tools\Facebook Tools.csproj", "{7795A673-70B0-402D-830A-9B949F461C66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookTool-Version2", "FacebookTool-Version2\FacebookTool-Version2.csproj", "{7F18A895-970F-49E8-BBD4-0918F10EB4D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7795A673-70B0-402D-830A-9B949F461C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7795A673-70B0-402D-830A-9B949F461C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7795A673-70B0-402D-830A-9B949F461C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F18A895-970F-49E8-BBD4-0918F10EB4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F18A895-970F-49E8-BBD4-0918F10EB4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F18A895-970F-49E8-BBD4-0918F10EB4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F18A895-970F-49E8-BBD4-0918F10EB4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
