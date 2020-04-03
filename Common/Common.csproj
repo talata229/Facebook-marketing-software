@@ -48,6 +48,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\FacebookHelper.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\ActionDTO.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\CategoryList.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Comments.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\CommentsDatum.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Cursors.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\DatumType.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\FluffyMessageTag.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\From.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\HomeRoot.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Likes.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Location.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Paging.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Place.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Privacy.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\Property.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\PurpleMessageTag.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\StoryTag.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\WelcomeDatum.cs" />
+    <Compile Include="ModelsDTO\Responses\Home\WithTags.cs" />
     <Compile Include="ModelsDTO\Responses\Message\AllParticipants.cs" />
     <Compile Include="ModelsDTO\Responses\Message\MessageThreads.cs" />
     <Compile Include="ModelsDTO\Responses\Message\MessageThreadsNode.cs" />

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Common.ModelsDTO.Responses.Message;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Common.ModelsDTO.Responses.Home;
 
 namespace Common.Helpers
 {
@@ -36,30 +37,31 @@ namespace Common.Helpers
                 var response = await http.PostAsync(url, formContent);
                 using (var sr = new StreamReader(await response.Content.ReadAsStreamAsync(), Encoding.GetEncoding("iso-8859-1")))
                 {
-
                     string s = await sr.ReadLineAsync();
-
                     Html_Test(s);
-
                 }
-
-
-                //HttpRequest http = new HttpRequest();
-                ////http.Cookies = new CookieDictionary();
-                //var fb_dtsg = "AQG91tirzkvM:AQHqn1aQJvJ-";
-                //var q = "viewer(){message_threads{nodes{thread_key{thread_fbid,other_user_id},all_participants{nodes{messaging_actor{name}}},messages_count,name,image,thread_type}}}";
-
-                //http.UserAgent = Http.ChromeUserAgent();
-                //var url = "https://www.facebook.com/api/graphql/";
-                //string type = "application/x-www-form-urlencoded";
-                //string data = "&fb_dtsg=" + fb_dtsg + "&q=" + q;
-                //string result = http.Post(url, data, type).ToString();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
 
+        }
+
+        public static async void GetHome(string token)
+        {
+            try
+            {
+                string url = $"https://graph.facebook.com/me/home?access_token={token}";
+                HttpClient http = new HttpClient();
+                var response = await http.GetAsync(url);
+                var result = await response.Content.ReadAsStringAsync();
+                HomeRoot homeRoot = JsonConvert.DeserializeObject<HomeRoot>(result);
+            }
+            catch (Exception e)
+            {
+                var test = true;
+            }
         }
 
         public static void Html_Test(string html)
