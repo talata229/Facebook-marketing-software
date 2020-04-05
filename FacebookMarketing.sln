@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookTool-Version2", "Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fbchart-csharp", "fbchart-csharp\fbchart-csharp.csproj", "{E3D5C3CA-69C6-4900-A1C9-1C905D4456BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook-Chat", "Facebook-Chat\Facebook-Chat.csproj", "{202F3F2A-D33F-4BC6-BE7A-561D3FCF9C48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD3DFBD4-D6AC-463E-BBF4-18159A351FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D5C3CA-69C6-4900-A1C9-1C905D4456BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D5C3CA-69C6-4900-A1C9-1C905D4456BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D5C3CA-69C6-4900-A1C9-1C905D4456BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D5C3CA-69C6-4900-A1C9-1C905D4456BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202F3F2A-D33F-4BC6-BE7A-561D3FCF9C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202F3F2A-D33F-4BC6-BE7A-561D3FCF9C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202F3F2A-D33F-4BC6-BE7A-561D3FCF9C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202F3F2A-D33F-4BC6-BE7A-561D3FCF9C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
