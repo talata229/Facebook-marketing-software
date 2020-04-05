@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Common.ModelsDTO.Responses.Home
@@ -15,7 +16,7 @@ namespace Common.ModelsDTO.Responses.Home
         public string Message { get; set; }
 
         [JsonProperty("created_time")]
-        public string CreatedTime { get; set; }
+        public DateTime? CreatedTime { get; set; }
 
         [JsonProperty("likes", NullValueHandling = NullValueHandling.Ignore)]
         public long? Likes { get; set; }

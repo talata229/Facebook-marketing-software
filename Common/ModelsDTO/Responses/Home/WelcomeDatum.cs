@@ -43,7 +43,7 @@ namespace Common.ModelsDTO.Responses.Home
         public DateTime? CreatedTime { get; set; }
 
         [JsonProperty("updated_time")]
-        public string UpdatedTime { get; set; }
+        public DateTime? UpdatedTime { get; set; }
 
         [JsonProperty("is_hidden")]
         public bool IsHidden { get; set; }
