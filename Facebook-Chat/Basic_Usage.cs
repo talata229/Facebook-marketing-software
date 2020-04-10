@@ -16,7 +16,7 @@ namespace Facebook_Chat
         public static async Task Run()
         {
             // Instantiate FBClient
-            MessengerClient client = new FBClient_Cookies();
+            MessengerClient client = new FBClientCustom();
 
             try
             {

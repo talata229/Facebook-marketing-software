@@ -14,6 +14,8 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using FireSharp.Interfaces;
+using Common.Helpers;
 
 namespace fbchart_csharp.API
 {
@@ -1268,6 +1270,32 @@ namespace fbchart_csharp.API
         /// <returns>Message ID of the sent message</returns>
         public async Task<string> send(FB_Message message = null, string thread_id = null, ThreadType? thread_type = null)
         {
+            #region FirebaseChatStop
+            IFirebaseClient client = FirebaseHelper.SetFirebaseClientForChat();
+            if (message.text == "stopall")
+            {
+                await client.SetAsync("ListBlockUser/" + thread_id, new
+                {
+                    Id = thread_id,
+                    BlockAll = true
+                });
+            }
+            else if (message.text == "stophour")
+            {
+                await client.SetAsync("ListUser/" + thread_id, new
+                {
+                    BlockUntil = DateTime.UtcNow.AddHours(1)
+                });
+            }
+            else if (message.text == "removestopall")
+            {
+                await client.DeleteAsync("ListBlockUser/" + thread_id);
+            }
+
+
+            #endregion
+
+
             /*
              * Sends a message to a thread
              * :param message: Message to send
