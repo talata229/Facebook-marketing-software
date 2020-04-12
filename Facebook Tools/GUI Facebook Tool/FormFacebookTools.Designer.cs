@@ -102,6 +102,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -149,6 +150,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.txtKhoangThoiGianGiua2LanLayToken);
             this.panel5.Controls.Add(this.prBGetToken);
@@ -232,6 +234,7 @@
             this.lvToken.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvToken.FullRowSelect = true;
             this.lvToken.GridLines = true;
+            this.lvToken.HideSelection = false;
             this.lvToken.Location = new System.Drawing.Point(0, 0);
             this.lvToken.Name = "lvToken";
             this.lvToken.Size = new System.Drawing.Size(671, 395);
@@ -478,6 +481,7 @@
             this.lvReactions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvReactions.FullRowSelect = true;
             this.lvReactions.GridLines = true;
+            this.lvReactions.HideSelection = false;
             this.lvReactions.Location = new System.Drawing.Point(0, 0);
             this.lvReactions.Name = "lvReactions";
             this.lvReactions.Size = new System.Drawing.Size(626, 395);
@@ -683,6 +687,7 @@
             this.lvReactionNewsFeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvReactionNewsFeed.FullRowSelect = true;
             this.lvReactionNewsFeed.GridLines = true;
+            this.lvReactionNewsFeed.HideSelection = false;
             this.lvReactionNewsFeed.Location = new System.Drawing.Point(0, 0);
             this.lvReactionNewsFeed.Name = "lvReactionNewsFeed";
             this.lvReactionNewsFeed.Size = new System.Drawing.Size(652, 321);
@@ -881,6 +886,16 @@
             this.backgroundWorker3.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker3_ProgressChanged);
             this.backgroundWorker3.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker3_RunWorkerCompleted);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(43, 293);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 45);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -997,6 +1012,7 @@
         private System.Windows.Forms.CheckBox chkNoneAutoLikeNewsFeed;
         private System.Windows.Forms.ProgressBar prBAutoLikeNewsFeed;
         public System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

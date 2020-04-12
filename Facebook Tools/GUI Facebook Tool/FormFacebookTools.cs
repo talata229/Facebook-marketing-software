@@ -301,8 +301,8 @@ namespace Facebook_Tools
             //List<String> listTest = ftf.GetNameAndUIDFromToken(txtTokenAutoLikeNewsFeed.Text);
             //MessageBox.Show(listTest[0]);
             //MessageBox.Show(listTest[1]);
-            dicReaction= ftf.FBListNewFeed2(txtTokenAutoLikeNewsFeed.Text, int.Parse(txtSoLuongBaiAutoLikeNewsFeed.Text), true);
-            foreach(KeyValuePair< string, NewFeed1 > item in dicReaction)
+            dicReaction = ftf.FBListNewFeed2(txtTokenAutoLikeNewsFeed.Text, int.Parse(txtSoLuongBaiAutoLikeNewsFeed.Text), true);
+            foreach (KeyValuePair<string, NewFeed1> item in dicReaction)
             {
                 MessageBox.Show(item.Key + "||||||" + item.Value);
             }
@@ -405,7 +405,7 @@ namespace Facebook_Tools
             listAutoLikeNewFeeds.Clear();
 
             //Hiển thị danh sách các bài cần react lên listview trước
-            dicReaction = ftf.FBListNewFeed2(txtTokenAutoLikeNewsFeed.Text, int.Parse(txtSoLuongBaiAutoLikeNewsFeed.Text),true);
+            dicReaction = ftf.FBListNewFeed2(txtTokenAutoLikeNewsFeed.Text, int.Parse(txtSoLuongBaiAutoLikeNewsFeed.Text), true);
             int i = 1;
             foreach (KeyValuePair<string, NewFeed1> item in dicReaction)
             {
@@ -449,7 +449,7 @@ namespace Facebook_Tools
         {
             try
             {
-               
+
                 Random rd = new Random();
                 int total = rd.Next(int.Parse(txtTuAutoLikeNewsFeed.Text), int.Parse(txtDenAutoLikeNewsFeed.Text));
                 //MessageBox.Show("Total la" + total);
@@ -469,12 +469,12 @@ namespace Facebook_Tools
                         }
                     }
                     stt++;
-                    if(stt==listAutoLikeNewFeeds.Count)
+                    if (stt == listAutoLikeNewFeeds.Count)
                     {
                         tiepTucThaTim = true;
-                       // MessageBox.Show("Có chạy vào đây");
-                      //  LoadNewsFeedsLanThu2();
-                      // backgroundWorker3.RunWorkerAsync();
+                        // MessageBox.Show("Có chạy vào đây");
+                        //  LoadNewsFeedsLanThu2();
+                        // backgroundWorker3.RunWorkerAsync();
                     }
                 } while (listAutoLikeNewFeeds.Count > 0);
             }
@@ -502,7 +502,7 @@ namespace Facebook_Tools
 
         private void backgroundWorker3_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-           // backgroundWorker3.RunWorkerAsync();
+            // backgroundWorker3.RunWorkerAsync();
             MessageBox.Show("Đã Auto thả tim xong");
             if (tiepTucThaTim)
             {
@@ -510,7 +510,7 @@ namespace Facebook_Tools
                 LoadNewsFeedsLanThu2();
                 backgroundWorker3.RunWorkerAsync();
             }
-            
+
             //MessageBox.Show()
 
         }
@@ -530,6 +530,94 @@ namespace Facebook_Tools
                 if (sender != null)
                     ((TextBox)sender).SelectAll();
             }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            var source = @"  
+                <!DOCTYPE html>  
+                    <html>  
+                        <head>  
+                            <style>  
+                                table {  
+                                  font-family: arial, sans-serif;  
+                                  border-collapse: collapse;  
+                                  width: 100%;  
+                                }  
+                                  
+                                td, th {  
+                                  border: 1px solid #dddddd;  
+                                  text-align: left;  
+                                  padding: 8px;  
+                                }  
+                                  
+                                tr:nth-child(even) {  
+                                  background-color: #dddddd;  
+                                }  
+                          </style>  
+                         </head>  
+                    <body>  
+                      
+                        <h2>HTML Table</h2>  
+                          
+                        <table>  
+                          <tr>  
+                            <th>Contact</th>  
+                            <th>Country</th>  
+                          </tr>  
+                          <tr>  
+                            <td>Kaushik</td>  
+                            <td>India</td>  
+                          </tr>  
+                          <tr>  
+                            <td>Bhavdip</td>  
+                            <td>America</td>  
+                          </tr>  
+                          <tr>  
+                            <td>Faisal</td>  
+                            <td>Australia</td>  
+                          </tr>  
+                        </table>  
+                     </body>  
+                    </html> ";
+            StartBrowser(source);
+            Console.ReadLine();
+        }
+
+        private static void StartBrowser(string source)
+        {
+            var th = new Thread(() =>
+            {
+                var webBrowser = new WebBrowser();
+                webBrowser.ScrollBarsEnabled = false;
+                webBrowser.IsWebBrowserContextMenuEnabled = true;
+                webBrowser.AllowNavigation = true;
+
+                webBrowser.DocumentCompleted += webBrowser_DocumentCompleted;
+                webBrowser.DocumentText = source;
+
+                Application.Run();
+            });
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        static void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            var webBrowser = (WebBrowser)sender;
+            using (Bitmap bitmap =
+                new Bitmap(
+                    webBrowser.Width,
+                    webBrowser.Height))
+            {
+                webBrowser
+                    .DrawToBitmap(
+                        bitmap,
+                        new System.Drawing
+                            .Rectangle(0, 0, bitmap.Width, bitmap.Height));
+                bitmap.Save(@"filename.jpg",
+                    System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+
         }
     }
 }
