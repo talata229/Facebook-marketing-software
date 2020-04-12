@@ -21,6 +21,7 @@ namespace Facebook_Chat
 {
     public class FBClientCustom : MessengerClient
     {
+
         private static readonly string appName = "FBChat-Sharp";
         private static readonly string sessionFile = "SESSION_COOKIES_core.dat";
 
